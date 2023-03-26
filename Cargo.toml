@@ -3,6 +3,13 @@ name = "disp_array"
 version = "0.1.0"
 edition = "2021"
 
+authors = ["taaki <taaki.paul@gmail.com>"]
+description = "This adds a wrapper for arrays to give the 'Display' trait."
+repository = "https://github.com/taaki2311/disp_array"
+license = "MIT OR Apache-2.0"
+keywords = ["array", "display", "string"]
+categories = ["no-std::no-alloc", "rust-patterns"]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
