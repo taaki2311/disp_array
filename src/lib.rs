@@ -1,7 +1,7 @@
 use std::fmt::{Display, Formatter, Result};
 
 // https://rsdlt.github.io/posts/rust-use-newtype-pattern-display-trait-array-generics/
-struct DispArray<T: Display, const N: usize>([T; N]);
+pub struct DispArray<T: Display, const N: usize>([T; N]);
 impl<T: Display, const N: usize> Display for DispArray<T, N> {
     fn fmt(&self, f: &mut Formatter) -> Result {
         let separator = ", ";
