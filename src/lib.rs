@@ -10,7 +10,7 @@ impl<T: Display, const N: usize> Display for DispArray<T, N> {
         for element in &self.0 {
             string.push_str(&element.to_string());
             if !std::ptr::eq(element, last) {
-                string.push_str(&separator);
+                string.push_str(separator);
             }
         }
         string.push(']');
